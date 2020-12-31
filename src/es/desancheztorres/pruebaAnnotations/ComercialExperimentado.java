@@ -1,6 +1,7 @@
 package es.desancheztorres.pruebaAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -33,6 +34,7 @@ public class ComercialExperimentado implements Empleados {
 	}
 	
 	@Autowired
+	@Qualifier("informeFinancieroTrim4")
 	private CreacionInformeFinanciero nuevoInforme;
 
 }
