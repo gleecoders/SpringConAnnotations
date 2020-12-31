@@ -10,10 +10,16 @@ public class ComercialExperimentado implements Empleados {
 		
 	}
 	
-	@Autowired
-	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
-		this.nuevoInforme = nuevoInforme;
-	}
+//	@Autowired
+//	public ComercialExperimentado(CreacionInformeFinanciero nuevoInforme) {
+//		this.nuevoInforme = nuevoInforme;
+//	}
+	
+	
+//	@Autowired
+//	public void queMasDaElNombre(CreacionInformeFinanciero nuevoInforme) {
+//		this.nuevoInforme = nuevoInforme;
+//	}
 
 	@Override
 	public String getTareas() {
@@ -26,6 +32,7 @@ public class ComercialExperimentado implements Empleados {
 		return nuevoInforme.getInformeFinanciero();
 	}
 	
+	@Autowired
 	private CreacionInformeFinanciero nuevoInforme;
 
 }
